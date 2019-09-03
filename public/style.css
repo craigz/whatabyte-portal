@@ -6,9 +6,9 @@
   --core-font: "Merriweather Sans", sans-serif;
 
   --primary: #ffffff;
-  --secondary: #260b66;
+  --secondary: #2a3747;
 
-  --highlight: #4dc1c4;
+  --highlight: #fa4141;
 
   --ui-shawdow: 0 2px 4px -1px rgba(0, 0, 0, 0.06),
     0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
@@ -21,7 +21,7 @@
 }
 
 html,
-body, 
+body,
 #root {
   height: 100%;
   width: 100%;
@@ -150,6 +150,7 @@ a {
   box-shadow: var(--ui-shawdow);
 }
 .WelcomeView {
-	background:url("dev-food.jpg") left bottom;
-	background-size: cover;
+  background: url("dev-food.jpg") left bottom;
+  background-size: cover;
 }
+
