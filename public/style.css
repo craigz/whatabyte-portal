@@ -153,4 +153,8 @@ a {
   background: url("dev-food.jpg") left bottom;
   background-size: cover;
 }
+.UserView {
+  background: url("team.jpg") left bottom;
+  background-size: cover;
+}
 

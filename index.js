@@ -15,6 +15,10 @@ app.get("/", (req,res) => {
 	res.render("index", { title: "Home"});
 });
 
+app.get("/user", (req, res) => {
+  res.render("user", { title: "Profile", userProfile: { nickname: "craigz" } });
+});
+
 app.listen(port, () => {
 	console.log(`Listening to requests on http://localhost:${port}`);
 });
