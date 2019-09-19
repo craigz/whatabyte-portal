@@ -2,6 +2,22 @@
 
 const path = require("path");
 const express = require("express");
+const expressSession = require("express-session");
+
+// App instance, port declaration
+
+const session = {
+  secret: "LoxodontaElephasMammutSnerhusPalaeoloxodonPrimeleKluphas",
+  cookie: {},
+  resave: false,
+  saveUninitialized: false
+};
+
+if (app.get("env") === "production") {
+  session.cookie.secure = true; // Serve secure cookies, requires HTTPS
+}
+
+app.use(expressSession(session));
 
 const app = express();
 const port = process.env.PORT || "8000";
