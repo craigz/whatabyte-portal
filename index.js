@@ -4,7 +4,8 @@ const path = require("path");
 const express = require("express");
 const expressSession = require("express-session");
 
-// App instance, port declaration
+const app = express();
+const port = process.env.PORT || "8000";
 
 const session = {
   secret: "LoxodontaElephasMammutSnerhusPalaeoloxodonPrimeleKluphas",
@@ -18,9 +19,6 @@ if (app.get("env") === "production") {
 }
 
 app.use(expressSession(session));
-
-const app = express();
-const port = process.env.PORT || "8000";
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine","pug");
